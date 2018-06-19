@@ -13,7 +13,7 @@ class Project
       @backer << new_backer
       new_backer.add_project(self)
     end
-  
+
 
 
 
