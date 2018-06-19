@@ -8,7 +8,7 @@ class Backer
   end
 
   def back_project(new_project = Project.new(title))
-    @backed_projects << new_project
+    @backed_projects << new_project if new_project != nil
     new_project.add_backer(self) 
 
   end
