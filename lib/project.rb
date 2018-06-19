@@ -7,9 +7,9 @@ class Project
   end
 
   def add_backer(new_backer = Backer.new(name))
-    @backers << new_backer unless new_backer == nil
+    @backers << new_backer unless @backers.include?(new_backer)
     new_backer.back_project(self)
-    break
+
 
 
   end
